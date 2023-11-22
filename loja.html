@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_shop.css">
+    <link rel="shortcut icon" href="/imagens/logo.png" type="image/png">
+
+    <title>Capitulo certo | Loja</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav container">
+        <ul class="header-list-container">
+          <li class="nav-item">
+            <a href="index.html"><i class='fas fa-home fa-2x' style='color:#808080'></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="loja.html"><i class='fas fa-shopping-cart fa-2x' style='color:#808080'></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="pagina-livros.html"><i class='fas fa-book-open fa-2x' style='color:#808080'></i></a>
+          </li>
+        </ul>
+      </nav>
+      <hr>
+      <h1 class="titulu title" id="title">CapítuloShop</h1>
+    </header>
+
+    <main class="main-section">
+      <section class="container normal-section">
+        <h2 class="section-titulo">Veja mais obras!</h2>
+        <div class="products-container">
+          <div class="book-product" id="left">
+            <strong class="product-titulo">livro 1</strong>
+            <!-- <br> -->
+            <img src="/imagens/analise-de-trafego-tcp.jpg" alt="livro 1" class="product-imagem">
+            <div class="product-preco-container">
+              <span class="product-preco">R$29,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+          </div>
+
+          <div class="book-product" id="right">
+            <strong class="product-titulo">livro 2</strong>
+            <!-- <br> -->
+            <img src="/imagens/livro9.jpg" alt="livro 2" class="product-imagem">
+            <div class="produto-preco-container">
+              <span class="product-preco">R$39,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+          </div>
+  
+          <div class="book-product" id="left">
+            <strong class="product-titulo">livro 3</strong>
+            <!-- <br> -->
+            <img src="/imagens/livro7.jpg" alt="livro 3" class="product-imagem">
+            <div class="produto-preco-container">
+              <span class="product-preco">R$19,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+          </div>
+  
+          <div class="book-product" id="right">
+            <strong class="product-titulo">livro 4</strong>
+            <!-- <br> -->
+            <img src="/imagens/livro5.jpg" alt="Livro 4" class="product-imagem">
+            <div class="produto-preco-container">
+              <span class="product-preco">R$79,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+          </div>
+        </div>
+      </section>
+<!--Carrin-->
+      <section class="container normal-section">
+        <h2 class="section-titulo">Carrinho</h2>
+
+        <table class="table-carrin">
+          <thead>
+            <tr>
+              <th class="cabess-do-item first-col">Item</th>
+              <th class="cabess-do-item second-col">Preço</th>
+              <th class="cabess-do-item third-col">Quantidade</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!--
+            <tr class="podruto-carrin">
+              <td class="identificacion-produto">
+                <img src="/imagens/java-como-programar.jpg" alt="The clean code" class="imagem-prod-carrin">
+                <strong class="titulo-prod-carrin">Livro</strong>
+              </td>
+              <td>
+                <span class="preco-prod-carrin">R$69,90</span>
+              </td>
+              <td>
+                <input type="number" value="2" min="0" class="prod-qtd-input">
+                <button type="button" class="button-remover-prod">Remover</button>
+              </td>
+            </tr>
+            <tr class="podruto-carrin">
+              <td class="identificacion-produto">
+                <img id="demo" src="/imagens/livro10.jpg" alt="Livro 3" class="imagem-prod-carrin">
+                <strong class="titulo-prod-carrin">Livro 3</strong>
+              </td>
+              <td>
+                <span class="preco-prod-carrin">R$19,99</span>
+              </td>
+              <td>
+                <input type="number" value="1" min="0" class="prod-qtd-input">
+                <button type="button" class="button-remover-prod">Remover</button>
+              </td>
+            </tr>-->
+          </tbody>
+<!--TOTAL A PAGAR-->
+          <tfoot>
+            <tr>
+              <td colspan="3" class="container-sald-devedor">
+                <strong>Total</strong>
+                <span>R$0,00</span>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <button type="button" class="botao-comprar" onclick="removeEventListener">Finalizar Compra</button>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container main-footer-container">
+        <h3 class="title-medium title">Capítulo Certo :D</h3>
+        <ul class="list-container">
+          <li class="footer-item">
+            <a href="https://pt-br.facebook.com/" class="fab fa-github" target="_blank"> 
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script async src="/js/loja.js"></script>
+  </body>
+</html>
